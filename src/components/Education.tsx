@@ -141,6 +141,7 @@ export default function Education() {
                 green: 'border-l-4 border-green-400 from-green-50 to-white',
                 pink: 'border-l-4 border-pink-400 from-pink-50 to-white',
                 yellow: 'border-l-4 border-yellow-400 from-yellow-50 to-white',
+                blue: 'border-l-4 border-blue-400 from-yellow-50 to-white',
               };
               return (
                 <div
