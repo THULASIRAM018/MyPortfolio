@@ -18,9 +18,7 @@ export default function Projects() {
       description: 'A serverless solution for scalable and efficient cloud-based file management. Users can securely upload, preview, download, and delete files and folders with a responsive UI.',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React.js', 'Node.js', 'AWS', 'MongoDB'],
-      category: 'web',
-      category: 'software',
-      category: 'security',
+      category: ['web', 'software', 'security',],
       gradient: 'from-pink-400 to-pink-500',
     },
     {
