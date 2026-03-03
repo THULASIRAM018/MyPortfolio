@@ -94,14 +94,10 @@ export default function Education() {
       title: 'Fundamentals of Robotics',
       organization: 'Zeekers Employment Pvt. Ltd.',
       Tasks: [
-        'Built automated file categorization and organization system',
-        'Implemented directory scanning and folder creation logic',
-        'Developed secure password storage with encryption',
-        'Designed interactive user interfaces',
-        'Created quiz logic with score tracking',
-        'Integrated database/file handling for data storage',
+        'completed a 5 day Skilland Entrepreneurship Development program on Fundamentals of Robotics',
       ],
-      date: 'May 2025 – July 2025',
+      Learned: 
+      date: '11 Dec - 15 Dec 2023',
       color: 'red',
     },
   ];
