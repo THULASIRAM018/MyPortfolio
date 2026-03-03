@@ -50,11 +50,11 @@ export default function Projects() {
       description: 'Created a dynamic quiz application with real-time score tracking and question management. Integrated file/database storage for efficient retrieval and performance evaluation.',
       image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Python', 'Logic Building', 'Database'],
-      category: 'application',
+      category: 'web',
       gradient: 'from-orange-400 to-orange-500',
     }
   ];
-  const filters = ['all', 'web', 'ml', 'Python'];
+  const filters = ['all', 'web', 'ml', 'software', 'security'];
 
   const filteredProjects = activeFilter === 'all'
     ? projects
