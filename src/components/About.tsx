@@ -55,13 +55,13 @@ export default function About() {
             <div className="flex gap-4 pt-4">
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">
-                  2+
+                  5+
                 </div>
                 <div className="text-gray-600 text-sm">Internships</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
-                  2
+                  6
                 </div>
                 <div className="text-gray-600 text-sm">Projects</div>
               </div>
