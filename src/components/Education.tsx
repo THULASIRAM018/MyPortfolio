@@ -65,7 +65,7 @@ export default function Education() {
     },
     {
       title: 'Python Full Stack Intern',
-      organization: 'UniConverge Technologies Pvt. Ltd. (Upskill Campus)',
+      organization: 'Sri Vensy Technologies',
       Tasks: [
         'Developed backend modules using Python for business workflows',
         'Implemented API logic and validated request/response data',
@@ -78,7 +78,6 @@ export default function Education() {
     },
      {
       title: 'Python Intern',
-      organization: 'Sri Vensy Technologies',
       organization: 'UniConverge Technologies Pvt. Ltd. (Upskill Campus)',
       Tasks: [
         'Developed backend modules using Python for business workflows',
