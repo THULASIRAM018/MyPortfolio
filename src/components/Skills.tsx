@@ -21,7 +21,7 @@ export default function Skills() {
         { name: 'Python', level: 80 },
         { name: 'Java', level: 70 },
         { name: 'JavaScript', level: 80 },
-        { name: 'C', level: 6 },
+        { name: 'C', level: 68 },
       ],
     },
     {
