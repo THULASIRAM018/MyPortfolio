@@ -94,7 +94,9 @@ export default function Education() {
       title: 'Fundamentals of Robotics - IIT Delhi',
       organization: 'Zeekers Employment Pvt. Ltd.',
       Tasks: [
-        'Demonstrated robotics concepts through hands-on activities and real-world applications, Utilized Arduino Uno for practical implementation using Python programming, Designed and developed a robot car as part of applied robotics learning.',
+        'Demonstrated robotics concepts through hands-on activities',
+        'Utilized Arduino Uno for practical implementation using Python programming',
+        'Designed and developed a robot car as part of applied robotics learning.',
       ],
       Learned: 'Completed a 5 day Skill Development & Entrepreneurship Training Program on Fundamentals of Robotics',
       date: '11 Dec - 15 Dec 2023',
