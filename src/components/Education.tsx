@@ -115,6 +115,12 @@ export default function Education() {
                   <h4 className="font-bold text-gray-800 mb-2">{cert.title}</h4>
                   <p className="text-sm text-gray-600 mb-3">{cert.organization}</p>
                   <p className="text-sm text-blue-600 mb-3">{cert.Tasks}</p>
+                  <div className="space-y-2 text-gray-700">
+  {tasks.map((task, index) => (
+    <p key={index}>{task}</p>
+  ))}
+</div>
+
                   <p className={`text-xs font-medium ${
                     cert.color === 'green' ? 'text-green-600' :
                     cert.color === 'pink' ? 'text-pink-600' :
