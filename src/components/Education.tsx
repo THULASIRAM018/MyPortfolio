@@ -41,7 +41,7 @@ export default function Education() {
               '🌸 Monitoring infrastructure & alerting',
               '🌸 Deploying scalable Nginx on ECS',
               '🌸 Developing a simple To-Do List API',
-              ]
+              ],
       date: '05/2025 - 07/2025',
       color: 'green',
     },
