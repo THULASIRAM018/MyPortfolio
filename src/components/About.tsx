@@ -36,7 +36,7 @@ export default function About() {
             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
             <div className="relative bg-white rounded-2xl p-8 shadow-xl">
               <img
-                src="https://1drv.ms/i/c/6251315f11144731/IQD5OusBfXGyTbReP7p7d8tQAc7dBdZxq9oEsWdORB1CWPM?e=2cvsFc"
+                src="https://1drv.ms/i/c/6251315f11144731/IQD5OusBfXGyTbReP7p7d8tQAc7dBdZxq9oEsWdORB1CWPM?e=UNZPKW"
                 alt="Profile"
                 className="w-full h-96 object-cover rounded-xl"
               />
