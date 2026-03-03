@@ -35,7 +35,13 @@ export default function Education() {
     {
       title: 'Cloud Application Developer - JNTUA Summer Internship',
       organization: 'Rooman Technologies & IBM',
-      Tasks: 'tgdfdgfds',
+      Tasks: ['🌸 Managing IAM policies for IT development',
+              '🌸 Implementing MP3 notification system',
+              '🌸 Deploying web servers on AWS EC2',
+              '🌸 Monitoring infrastructure & alerting',
+              '🌸 Deploying scalable Nginx on ECS',
+              '🌸 Developing a simple To-Do List API',
+              ]
       date: '05/2025 - 07/2025',
       color: 'green',
     },
