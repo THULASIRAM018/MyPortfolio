@@ -92,7 +92,7 @@ export default function Education() {
     },
     {
       title: 'Fundamentals of Robotics',
-      organization: 'ZEEKERS EMPLOYMENT PRIVATELIMTED',
+      organization: 'Zeekers Employment Pvt. Ltd.',
       Tasks: [
         'Built automated file categorization and organization system',
         'Implemented directory scanning and folder creation logic',
