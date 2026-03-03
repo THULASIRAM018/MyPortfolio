@@ -54,7 +54,6 @@ export default function Education() {
         'Introduction to Cloud Computing',
         'Cloud Computing Architecture',
         'Data Management in Cloud Computing',
-        'Cloud Security',
         'Open Source, Cloud Simulator',
         'Research trend in Cloud Computing',
         'VM Resource Allocation, Monitoring',
