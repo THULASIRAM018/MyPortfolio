@@ -77,7 +77,7 @@ export default function Education() {
       color: 'yellow',
     },
      {
-      title: 'Python Intern (Data Analytics)',
+      title: 'Python Developer Intern',
       organization: 'UniConverge Technologies Pvt. Ltd. (Upskill Campus)',
       Tasks: [
         'Built automated file categorization and organization system',
