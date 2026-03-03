@@ -34,7 +34,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
-            <div className="flex justify-center items-center border-4 border-gray-300 rounded-full w-96 h-96 mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center justify-center mb-16">
               <img src="https://1drv.ms/i/c/6251315f11144731/IQT5OusBfXGyTbReP7p7d8tQAWlplsNjY1IXzEAPX8KJ7mQ?width=640&height=640"
                 alt="Profile"
                 className="w-96 h-96 object-cover rounded-full"
