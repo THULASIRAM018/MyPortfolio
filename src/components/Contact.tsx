@@ -19,7 +19,7 @@ export default function Contact() {
     {
       icon: <Mail className="text-green-500" size={24} />,
       title: 'Email',
-      <a> value: 'vlthulasiram.23@gmail.com',</a>
+      value: 'vlthulasiram.23@gmail.com',
       gradient: 'from-green-400 to-green-500',
     },
     {
