@@ -26,8 +26,7 @@ export default function Projects() {
       description: 'Simple yet powerful RESTful API for managing tasks and productivity. Built during cloud computing internship with proper authentication and data management.',
       image: 'https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Node.js', 'Express', 'REST API'],
-      category: 'web',
-      category: 'software',
+      category: ['web', 'software',],
       gradient: 'from-yellow-400 to-yellow-500',
     },
     {
