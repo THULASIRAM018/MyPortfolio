@@ -88,7 +88,7 @@ export default function Education() {
         'Integrated database/file handling for data storage',
       ],
       date: 'May 2025 – July 2025',
-      color: 'blue',
+      color: 'red',
     },
   ];
 
