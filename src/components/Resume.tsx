@@ -1,6 +1,6 @@
 import { FileText } from 'lucide-react';
 
-export default function ResumeDashboard() {
+export default function Resume() {
   return (
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
