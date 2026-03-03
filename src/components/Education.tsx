@@ -76,6 +76,19 @@ export default function Education() {
       date: '11/2025 - 03/2026',
       color: 'yellow',
     },
+     {
+      title: 'Python Full Stack Intern',
+      organization: 'Sri Vensy Technologies',
+      Tasks: [
+        'Developed backend modules using Python for business workflows',
+        'Implemented API logic and validated request/response data',
+        'Integrated SQL queries for data storage and retrieval',
+        'Debugged backend issues and optimized application logic',
+        'Collaborated with frontend team to ensure smooth data flow',
+      ],
+      date: '11/2025 - 03/2026',
+      color: 'yellow',
+    },
   ];
 
   return (
