@@ -18,20 +18,20 @@ export default function Skills() {
       category: 'Programming',
       color: 'from-pink-400 to-pink-500',
       skills: [
-        { name: 'Python', level: 88 },
-        { name: 'Java', level: 75 },
+        { name: 'Python', level: 80 },
+        { name: 'Java', level: 70 },
         { name: 'JavaScript', level: 80 },
-        { name: 'C', level: 75 },
+        { name: 'C', level: 68 },
       ],
     },
     {
       category: 'Web & Tools',
       color: 'from-yellow-400 to-yellow-500',
       skills: [
-        { name: 'React.js', level: 85 },
-        { name: 'Node.js', level: 80 },
-        { name: 'Tailwind CSS', level: 85 },
-        { name: 'MongoDB', level: 78 },
+        { name: 'React.js', level: 80 },
+        { name: 'Node.js', level: 75 },
+        { name: 'Tailwind CSS', level: 70 },
+        { name: 'MongoDB', level: 75 },
       ],
     },
   ];
