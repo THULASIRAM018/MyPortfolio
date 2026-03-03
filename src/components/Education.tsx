@@ -61,7 +61,7 @@ export default function Education() {
         'Serverless Computing and FaaS Model',
         'Case Studies and Recent Advancements',
       ],
-      Learned:
+      Learned:,
       date: '07/2025 - 10/2025',
       color: 'pink',
     },
@@ -69,7 +69,7 @@ export default function Education() {
       title: 'Python Full Stack Intern',
       organization: 'Sri Vensy Technologies',
       Tasks: [],
-      Learned:
+      Learned:,
       date: '11/2025 - 03/2026',
       color: 'yellow',
     },
