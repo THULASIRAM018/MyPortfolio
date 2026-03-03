@@ -35,25 +35,28 @@ export default function Education() {
     {
       title: 'Cloud Application Developer - JNTUA Summer Internship',
       organization: 'Rooman Technologies & IBM',
-      Tasks: ['1. Managing IAM policies for IT development',
-              '2. Implementing MP3 notification system',
-              '3. Deploying web servers on AWS EC2',
-              '4. Monitoring infrastructure & alerting',
-              '5. Deploying scalable Nginx on ECS',
-              '6. Developing a simple To-Do List API',
-              ],
+      Tasks: [
+        '1. Managing IAM policies for IT development',
+        '2. Implementing MP3 notification system',
+        '3. Deploying web servers on AWS EC2',
+        '4. Monitoring infrastructure & alerting',
+        '5. Deploying scalable Nginx on ECS',
+        '6. Developing a simple To-Do List API',
+      ],
       date: '05/2025 - 07/2025',
       color: 'green',
     },
     {
       title: 'Cloud Computing – NPTEL',
       organization: '12-week Certified Course',
+      Tasks: [],
       date: '07/2025 - 10/2025',
       color: 'pink',
     },
     {
       title: 'Python Full Stack Intern',
       organization: 'Sri Vensy Technologies',
+      Tasks: [],
       date: '11/2025 - 03/2026',
       color: 'yellow',
     },
@@ -71,6 +74,7 @@ export default function Education() {
           <p className="text-gray-600 text-lg">Academic journey and professional development</p>
         </div>
 
+        {/* Education Section */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {educationDetails.map((edu, index) => (
             <div
@@ -96,6 +100,7 @@ export default function Education() {
           ))}
         </div>
 
+        {/* Certifications Section */}
         <div className="bg-white rounded-2xl p-12 shadow-lg mb-12">
           <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
             Certifications & Internships
@@ -114,12 +119,25 @@ export default function Education() {
                 >
                   <h4 className="font-bold text-gray-800 mb-2">{cert.title}</h4>
                   <p className="text-sm text-gray-600 mb-3">{cert.organization}</p>
-                  <p className="text-sm text-blue-600 mb-3">{cert.Tasks}</p>
-                  <p className={`text-xs font-medium ${
-                    cert.color === 'green' ? 'text-green-600' :
-                    cert.color === 'pink' ? 'text-pink-600' :
-                    'text-yellow-600'
-                  }`}>
+
+                  {/* Tasks printed line by line */}
+                  {cert.Tasks && cert.Tasks.length > 0 && (
+                    <ul className="list-disc list-inside text-gray-700 mb-3 text-sm space-y-1">
+                      {cert.Tasks.map((task, i) => (
+                        <li key={i}>{task}</li>
+                      ))}
+                    </ul>
+                  )}
+
+                  <p
+                    className={`text-xs font-medium ${
+                      cert.color === 'green'
+                        ? 'text-green-600'
+                        : cert.color === 'pink'
+                        ? 'text-pink-600'
+                        : 'text-yellow-600'
+                    }`}
+                  >
                     {cert.date}
                   </p>
                 </div>
