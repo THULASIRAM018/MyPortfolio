@@ -54,7 +54,7 @@ export default function Projects() {
       gradient: 'from-orange-400 to-orange-500',
     }
   ];
-  const filters = ['all', 'web', 'ml'];
+  const filters = ['all', 'web', 'ml', 'Python'];
 
   const filteredProjects = activeFilter === 'all'
     ? projects
