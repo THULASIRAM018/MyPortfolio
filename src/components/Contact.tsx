@@ -11,7 +11,16 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    // Construct mailto link with subject & body
+    const subject = encodeURIComponent(`Message from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    const mailtoLink = `mailto:vlthulasiram.23@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -21,18 +30,21 @@ export default function Contact() {
       title: 'Email',
       value: 'vlthulasiram.23@gmail.com',
       gradient: 'from-green-400 to-green-500',
+      link: 'mailto:vlthulasiram.23@gmail.com',
     },
     {
       icon: <Phone className="text-pink-500" size={24} />,
       title: 'Phone',
       value: '+91-7569854797',
       gradient: 'from-pink-400 to-pink-500',
+      link: 'tel:+917569854797',
     },
     {
       icon: <MapPin className="text-yellow-500" size={24} />,
       title: 'Location',
       value: 'Yadamari, AP 517128',
       gradient: 'from-yellow-400 to-yellow-500',
+      link: 'https://www.google.com/maps/search/?api=1&query=Yadamari,+AP+517128',
     },
   ];
 
@@ -57,8 +69,11 @@ export default function Contact() {
 
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
-                <div
+                <a
                   key={index}
+                  href={info.link}
+                  target={info.title === 'Location' ? '_blank' : '_self'}
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-gradient-to-br from-gray-50 to-white rounded-xl hover:shadow-lg transition-all group"
                 >
                   <div className={`p-3 bg-gradient-to-r ${info.gradient} rounded-lg`}>
@@ -70,7 +85,7 @@ export default function Contact() {
                       {info.value}
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
 
@@ -162,7 +177,12 @@ export default function Contact() {
             © 2024 Vadivelu Lokaiah Thulasiram. Built with React & Tailwind CSS
           </p>
           <p className="text-gray-500 text-sm">
-            <a href="https://www.linkedin.com/in/vadivelu-lokaiah-thulasiram-9a9826336" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-600 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/vadivelu-lokaiah-thulasiram-9a9826336"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-600 transition-colors"
+            >
               Connect on LinkedIn
             </a>
           </p>
