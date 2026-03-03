@@ -100,7 +100,7 @@ export default function Education() {
       ],
       Learned: 'Completed a 5 day Skill Development & Entrepreneurship Training Program on Fundamentals of Robotics',
       date: '11 Dec - 15 Dec 2023',
-      color: 'red',
+      color: 'blue',
     },
   ];
 
