@@ -6,13 +6,14 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
+import Resume from './components/Resume';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'education', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'education', 'contact', 'Resume'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -40,6 +41,7 @@ function App() {
       <Projects />
       <Education />
       <Contact />
+      <Resume/>
     </div>
   );
 }
