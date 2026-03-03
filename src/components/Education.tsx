@@ -91,10 +91,10 @@ export default function Education() {
       color: 'red',
     },
     {
-      title: 'Fundamentals of Robotics',
+      title: 'Fundamentals of Robotics - IIT Delhi',
       organization: 'Zeekers Employment Pvt. Ltd.',
       Tasks: [
-        'Completed a 5 day Skill Development & Entrepreneurship Training Program on Fundamentals of Robotics Supported by I-Hub Foundation for Cobotics (IHFC), Technology innovation hub of IIT Delhi.',
+        'Completed a 5 day Skill Development & Entrepreneurship Training Program on Fundamentals of Robotics',
       ],
       Learned: '',
       date: '11 Dec - 15 Dec 2023',
