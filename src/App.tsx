@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
-import Resume from './components/Resume';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
