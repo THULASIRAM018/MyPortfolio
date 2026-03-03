@@ -96,7 +96,7 @@ export default function Education() {
       Tasks: [
         'completed a 5 day Skilland Entrepreneurship Development program on Fundamentals of Robotics',
       ],
-      Learned: 
+      Learned: '',
       date: '11 Dec - 15 Dec 2023',
       color: 'red',
     },
