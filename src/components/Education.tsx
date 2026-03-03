@@ -94,7 +94,7 @@ export default function Education() {
       title: 'Fundamentals of Robotics',
       organization: 'Zeekers Employment Pvt. Ltd.',
       Tasks: [
-        'completed a 5 day Skilland Entrepreneurship Development program on Fundamentals of Robotics',
+        'completed a 5 day Skill Development & Entrepreneurship Training Program on Fundamentals of Robotics',
       ],
       Learned: '',
       date: '11 Dec - 15 Dec 2023',
