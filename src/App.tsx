@@ -40,7 +40,6 @@ function App() {
       <Projects />
       <Education />
       <Contact />
-      <Resume/>
     </div>
   );
 }
