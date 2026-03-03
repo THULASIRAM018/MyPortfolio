@@ -29,8 +29,32 @@ export default function Projects() {
       category: 'web',
       gradient: 'from-yellow-400 to-yellow-500',
     },
+    {
+      title: 'Smart File Organizer System',
+      description: 'Developed an automated file management system that scans directories, categorizes files by type, and organizes them into structured folders. Implemented efficient file handling and directory automation using Python.',
+      image: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Python', 'Automation', 'File Handling'],
+      category: 'software',
+      gradient: 'from-blue-400 to-blue-500',
+    },
+    {
+      title: 'Secure Password Manager',
+      description: 'Built a secure password management application with encrypted storage and strong password generation. Designed user-friendly interfaces and implemented secure data handling mechanisms.',
+      image: 'https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Python', 'Encryption', 'Security'],
+      category: 'security',
+      gradient: 'from-purple-400 to-purple-500',
+    },
+    {
+      title: 'Interactive Quiz Game Application',
+      description: 'Created a dynamic quiz application with real-time score tracking and question management. Integrated file/database storage for efficient retrieval and performance evaluation.',
+      image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Python', 'Logic Building', 'Database'],
+      category: 'application',
+      gradient: 'from-orange-400 to-orange-500',
+    }
   ];
-
+  ];
   const filters = ['all', 'web', 'ml'];
 
   const filteredProjects = activeFilter === 'all'
