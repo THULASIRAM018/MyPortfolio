@@ -74,7 +74,7 @@ export default function Education() {
         'Collaborated with frontend team to ensure smooth data flow',
       ],
       date: 'Nov 2025 - Present',
-      color: 'red',
+      color: 'Yellow',
     },
      {
       title: 'Python Intern (Data Analytics)',
@@ -88,7 +88,7 @@ export default function Education() {
         'Integrated database/file handling for data storage',
       ],
       date: 'May 2025 – July 2025',
-      color: 'yellow',
+      color: 'light blue',
     },
   ];
 
