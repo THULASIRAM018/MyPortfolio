@@ -93,7 +93,7 @@ export default function Skills() {
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'SPSS', 'DBMS', 'Excel', 'MS Word'].map(
+          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'SPSS', 'DBMS', 'Excel', 'MS Word', 'Tailwind CSS'].map(
             (tech, index) => (
               <div
                 key={index}
