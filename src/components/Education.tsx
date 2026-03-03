@@ -43,13 +43,25 @@ export default function Education() {
         'Deploying scalable Nginx on ECS',
         'Developing a simple To-Do List API',
       ],
+      Learned: '15 modules · 77 topics · Cloud Architecture, REST APIs, Serverless, DevOps',
       date: '05/2025 - 07/2025',
       color: 'green',
     },
     {
       title: 'Cloud Computing – NPTEL',
       organization: '12-week Certified Course',
-      Tasks: [],
+      Tasks: [
+        'Introduction to Cloud Computing',
+        'Cloud Computing Architecture',
+        'Data Management in Cloud Computing',
+        'Cloud Security',
+        'Open Source and Commercial Clouds, Cloud Simulator',
+        'Research trend in Cloud Computing, Fog Computing',
+        'VM Resource Allocation, Management and Monitoring',
+        'Serverless Computing and FaaS Model',
+        'Case Studies and Recent Advancements',
+      ],
+      Learned:
       date: '07/2025 - 10/2025',
       color: 'pink',
     },
@@ -57,6 +69,7 @@ export default function Education() {
       title: 'Python Full Stack Intern',
       organization: 'Sri Vensy Technologies',
       Tasks: [],
+      Learned:
       date: '11/2025 - 03/2026',
       color: 'yellow',
     },
@@ -118,17 +131,17 @@ export default function Education() {
                   className={`bg-gradient-to-br ${colorMap[cert.color as keyof typeof colorMap]} rounded-xl p-6 hover:shadow-lg transition-all`}
                 >
                   <h4 className="font-bold text-gray-800 mb-2">{cert.title}</h4>
-                  <p className="text-sm text-gray-600 mb-3">{cert.organization}</p>
+                  <p className="text-sm text-pink-600 mb-3">{cert.organization}</p>
 
                   {/* Tasks printed line by line */}
                   {cert.Tasks && cert.Tasks.length > 0 && (
-                    <ul className="list-disc list-inside text-gray-700 mb-3 text-sm space-y-1">
+                    <ul className="list-disc list-inside text-blue-700 mb-3 text-sm space-y-1">
                       {cert.Tasks.map((task, i) => (
                         <li key={i}>{task}</li>
                       ))}
                     </ul>
                   )}
-
+                   <p className="text-sm text-black-600 mb-3">{cert.Learned}</p>
                   <p
                     className={`text-xs font-medium ${
                       cert.color === 'green'
