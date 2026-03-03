@@ -44,7 +44,7 @@ export default function Education() {
         'Developing a simple To-Do List API',
       ],
       Learned: '15 modules · 77 topics · Cloud Architecture, REST APIs, Serverless, DevOps',
-      date: '05/2025 - 07/2025',
+      date: 'May 2025 - July 2025',
       color: 'green',
     },
     {
@@ -60,7 +60,7 @@ export default function Education() {
         'Serverless Computing and FaaS Model',
         'Case Studies and Recent Advancements',
       ],
-      date: '07/2025 - 10/2025',
+      date: 'May 2025 - Oct 2025',
       color: 'pink',
     },
     {
@@ -73,7 +73,7 @@ export default function Education() {
         'Debugged backend issues and optimized application logic',
         'Collaborated with frontend team to ensure smooth data flow',
       ],
-      date: '11/2025 - 03/2026',
+      date: 'Nov 2025 - Present',
       color: 'yellow',
     },
      {
