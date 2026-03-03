@@ -90,6 +90,20 @@ export default function Education() {
       date: 'May 2025 – July 2025',
       color: 'red',
     },
+    {
+      title: 'Fundamentals of Robotics',
+      organization: 'ZEEKERS EMPLOYMENT PRIVATELIMTED',
+      Tasks: [
+        'Built automated file categorization and organization system',
+        'Implemented directory scanning and folder creation logic',
+        'Developed secure password storage with encryption',
+        'Designed interactive user interfaces',
+        'Created quiz logic with score tracking',
+        'Integrated database/file handling for data storage',
+      ],
+      date: 'May 2025 – July 2025',
+      color: 'red',
+    },
   ];
 
   return (
