@@ -57,7 +57,7 @@ export default function Education() {
         'Cloud Security',
         'Open Source, Cloud Simulator',
         'Research trend in Cloud Computing',
-        'VM Resource Allocation, Management and Monitoring',
+        'VM Resource Allocation, Monitoring',
         'Serverless Computing and FaaS Model',
         'Case Studies and Recent Advancements',
       ],
