@@ -37,7 +37,7 @@ export default function About() {
             <div className="flex justify-center items-center border-4 border-gray-300 rounded-full w-96 h-96 mx-auto">
               <img src="https://1drv.ms/i/c/6251315f11144731/IQT5OusBfXGyTbReP7p7d8tQAWlplsNjY1IXzEAPX8KJ7mQ?width=640&height=640"
                 alt="Profile"
-                className="w-80 h-80 object-cover rounded-full"
+                className="w-96 h-96 object-cover rounded-full"
               />
             </div>
           </div>
