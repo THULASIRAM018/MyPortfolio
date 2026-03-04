@@ -2,7 +2,7 @@ import { Download, FileText, Award, Briefcase, GraduationCap } from 'lucide-reac
 
 export default function Resume() {
   // Path to the uploaded resume
-  const resumeFile = '/Vadivelu_Lokaiah_Thulasiram.pdf';
+  const resumeFile = '/Vadivelu_Lokaiah_Thulasiram copy copy.pdf';
 
   const handleDownload = () => {
     const link = document.createElement('a');
