@@ -60,7 +60,7 @@ export default function Education() {
         'Serverless Computing and FaaS Model',
         'Case Studies and Recent Advancements',
       ],
-      date: 'May 2025 - Oct 2025',
+      date: 'July 2025 - Oct 2025',
       color: 'pink',
     },
     {
