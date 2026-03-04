@@ -4,7 +4,7 @@ export default function Resume() {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/Vadivelu_Lokaiah_Thulasiram.pdf';
-    link.download = 'Vadivelu_Lokaiah_Thulasiram_updated.pdf';
+    link.download = 'Vadivelu_Lokaiah_Thulasiram_upda.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
