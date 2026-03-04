@@ -1,9 +1,11 @@
 import { Download, FileText, Award, Briefcase, GraduationCap } from 'lucide-react';
 
 export default function Resume() {
+  const resumeFile = '/Vadivelu_Lokaiah_Thulasiram.pdf'; // uploaded resume path
+
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Vadivelu_Lokaiah_Thulasiram.pdf';
+    link.href = resumeFile;
     link.download = 'Vadivelu_Lokaiah_Thulasiram_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -11,7 +13,7 @@ export default function Resume() {
   };
 
   const handleView = () => {
-    window.open('/Vadivelu_Lokaiah_Thulasiram.pdf', '_blank');
+    window.open(resumeFile, '_blank');
   };
 
   const resumeHighlights = [
@@ -44,7 +46,7 @@ export default function Resume() {
               My Resume
             </span>
           </h2>
-          <p className="text-gray-600 text-lg">Download my professional resume</p>
+          <p className="text-gray-600 text-lg">Download or view my professional resume</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
@@ -53,7 +55,7 @@ export default function Resume() {
             <div className="relative bg-white rounded-2xl p-8 shadow-xl">
               <div className="aspect-[8.5/11] bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                 <iframe
-                  src="/Vadivelu_Lokaiah_Thulasiram.pdf"
+                  src={resumeFile}
                   className="w-full h-full"
                   title="Resume Preview"
                 />
@@ -110,6 +112,12 @@ export default function Resume() {
               </p>
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-bold">Format:</span> PDF Document
+              </p>
+              <p className="text-sm text-gray-700 mt-1">
+                <span className="font-bold">Resume Link:</span>{' '}
+                <a href={resumeFile} target="_blank" rel="noopener noreferrer" className="text-pink-500 underline">
+                  Open Resume PDF
+                </a>
               </p>
             </div>
           </div>
