@@ -1,7 +1,7 @@
 import { Download, FileText, Award, Briefcase, GraduationCap, Github, ExternalLink, Mail, Phone, MapPin, Code, Heart } from 'lucide-react';
 
 export default function Resume() {
-  const resumeFile = '/Vadivelu_Lokaiah_Thulasiram.pdf';
+  const resumeFile = '/Vadivelu_Lokaiah_Thulasiram copy.pdf';
 
   const handleDownload = () => {
     const link = document.createElement('a');
