@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, MessageCircle, MessageSquare, PhoneCall } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -8,6 +8,7 @@ export default function Contact() {
     message: '',
   });
   const [focused, setFocused] = useState<string | null>(null);
+  const [showPhoneMenu, setShowPhoneMenu] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,18 +34,32 @@ export default function Contact() {
       link: 'mailto:vlthulasiram.23@gmail.com',
     },
     {
-      icon: <Phone className="text-pink-500" size={24} />,
-      title: 'Phone',
-      value: '+91-7569854797',
-      gradient: 'from-pink-400 to-pink-500',
-      link: 'tel:+917569854797',
-    },
-    {
       icon: <MapPin className="text-yellow-500" size={24} />,
       title: 'Location',
       value: 'Yadamari, AP 517128',
       gradient: 'from-yellow-400 to-yellow-500',
       link: 'https://www.google.com/maps/search/?api=1&query=Yadamari,+AP+517128',
+    },
+  ];
+
+  const phoneOptions = [
+    {
+      icon: <PhoneCall size={20} />,
+      label: 'Call',
+      link: 'tel:+917569854797',
+      color: 'text-green-600 hover:bg-green-50',
+    },
+    {
+      icon: <MessageSquare size={20} />,
+      label: 'Text Message',
+      link: 'sms:+917569854797',
+      color: 'text-blue-600 hover:bg-blue-50',
+    },
+    {
+      icon: <MessageCircle size={20} />,
+      label: 'WhatsApp',
+      link: 'https://wa.me/917569854797',
+      color: 'text-green-600 hover:bg-green-50',
     },
   ];
 
@@ -87,6 +102,49 @@ export default function Contact() {
                   </div>
                 </a>
               ))}
+
+              <div className="relative">
+                <button
+                  onClick={() => setShowPhoneMenu(!showPhoneMenu)}
+                  className="w-full flex items-center gap-4 p-4 bg-gradient-to-br from-gray-50 to-white rounded-xl hover:shadow-lg transition-all group"
+                >
+                  <div className="p-3 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg">
+                    <Phone className="text-white" size={24} />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm text-gray-500">Phone</div>
+                    <div className="font-medium text-gray-800 group-hover:text-pink-500 transition-colors">
+                      +91-7569854797
+                    </div>
+                  </div>
+                </button>
+
+                {showPhoneMenu && (
+                  <>
+                    <div
+                      className="fixed inset-0 z-40"
+                      onClick={() => setShowPhoneMenu(false)}
+                    />
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border-2 border-gray-200 z-50 overflow-hidden">
+                      {phoneOptions.map((option, index) => (
+                        <a
+                          key={index}
+                          href={option.link}
+                          target={option.label === 'WhatsApp' ? '_blank' : '_self'}
+                          rel="noopener noreferrer"
+                          onClick={() => setShowPhoneMenu(false)}
+                          className={`flex items-center gap-3 px-4 py-3 transition-colors ${option.color} ${
+                            index !== phoneOptions.length - 1 ? 'border-b border-gray-100' : ''
+                          }`}
+                        >
+                          {option.icon}
+                          <span className="font-medium">{option.label}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
 
             <div className="mt-8 p-6 bg-gradient-to-br from-green-50 via-pink-50 to-yellow-50 rounded-2xl">
