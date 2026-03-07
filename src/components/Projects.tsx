@@ -12,6 +12,7 @@ export default function Projects() {
       tags: ['Python', 'Pandas', 'NumPy', 'Jupyter'],
       category: 'ML',
       gradient: 'from-green-400 to-green-500',
+      githubUrl: 'https://github.com/THULASIRAM018/Jupyter-NoteBook-Project',
     },
     {
       title: 'Cloud-based File System',
