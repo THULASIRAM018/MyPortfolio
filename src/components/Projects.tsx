@@ -20,6 +20,8 @@ export default function Projects() {
       tags: ['React.js', 'Node.js', 'AWS', 'MongoDB'],
       category: 'web',
       gradient: 'from-pink-400 to-pink-500',
+      liveUrl: 'https://cloud-based-file-system2-g1tr.vercel.app/',
+      githubUrl: 'https://github.com/THULASIRAM018/Cloud-Based-File-System2',
     },
     {
       title: 'To-Do List API',
@@ -102,12 +104,26 @@ export default function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button className="p-2 bg-white rounded-full hover:bg-pink-100 transition-colors">
-                    <Github size={20} className="text-gray-700" />
-                  </button>
-                  <button className="p-2 bg-white rounded-full hover:bg-pink-100 transition-colors">
-                    <ExternalLink size={20} className="text-gray-700" />
-                  </button>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white rounded-full hover:bg-pink-100 transition-colors"
+                    >
+                      <Github size={20} className="text-gray-700" />
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white rounded-full hover:bg-pink-100 transition-colors"
+                    >
+                      <ExternalLink size={20} className="text-gray-700" />
+                    </a>
+                  )}
                 </div>
               </div>
 
