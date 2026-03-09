@@ -39,6 +39,7 @@ export default function Projects() {
       tags: ['Python', 'React', 'FastAPI','SQLite', 'SMTP'],
       category: 'software',
       gradient: 'from-blue-400 to-blue-500',
+      githubUrl: 'https://github.com/THULASIRAM018/Smart-File-Organizer',
     },
     {
       title: 'Secure Password Manager',
