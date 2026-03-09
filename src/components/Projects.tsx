@@ -36,7 +36,7 @@ export default function Projects() {
       title: 'Smart File Organizer System',
       description: 'Developed an automated file management system that scans directories, categorizes files by type, and organizes them into structured folders. Implemented efficient file handling and directory automation using Python.',
       image: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Python', 'Automation', 'File Handling'],
+      tags: ['Python', 'React', 'FastAPI','SQLite', 'SMTP'],
       category: 'software',
       gradient: 'from-blue-400 to-blue-500',
     },
