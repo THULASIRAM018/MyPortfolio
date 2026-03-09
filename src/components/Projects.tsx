@@ -34,7 +34,7 @@ export default function Projects() {
     },
     {
       title: 'Smart File Organizer System',
-      description: 'Developed an automated file management system that scans directories, categorizes files by type, and organizes them into structured folders. Implemented efficient file handling and directory automation using Python.',
+      description: 'Developed a Smart File Organizer that automatically scans directories, categorizes files, and organizes them into structured folders using Python. Built a full-stack system with React, REST APIs, SQLite, and SMTP-based email OTP authentication.',
       image: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Python', 'React', 'FastAPI','SQLite', 'SMTP'],
       category: 'software',
