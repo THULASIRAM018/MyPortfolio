@@ -51,29 +51,65 @@ export default function Resume() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-          {/* Resume Preview */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl">
-              <div className="aspect-[8.5/11] bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                <object
-                  data={resumeFile}
-                  type="application/pdf"
-                  className="w-full h-full"
-                  title="Resume Preview"
-                >
-                  <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-                    <FileText size={64} className="text-gray-400 mb-4" />
-                    <p className="text-gray-600 mb-2 font-medium">PDF Preview Unavailable</p>
-                    <p className="text-gray-500 text-sm mb-4">Your browser may block embedded PDFs in preview mode</p>
-                    <button
-                      onClick={handleView}
-                      className="px-4 py-2 bg-gradient-to-r from-pink-400 to-yellow-400 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all"
-                    >
-                      Open in New Tab
-                    </button>
+          {/* Resume Preview Card */}
+          <div className="relative group cursor-pointer" onClick={handleDownload}>
+            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition-opacity" />
+            <div className="relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all">
+              {/* Document Header */}
+              <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-t-lg p-4 text-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h4 className="font-bold text-lg">Vadivelu Lokaiah Thulasiram</h4>
+                    <p className="text-gray-300 text-sm">Software Developer</p>
                   </div>
-                </object>
+                  <FileText size={32} className="text-gray-400" />
+                </div>
+              </div>
+
+              {/* Document Body - Visual Resume Summary */}
+              <div className="bg-gray-50 rounded-b-lg p-5 space-y-4">
+                {/* Contact Row */}
+                <div className="flex items-center gap-4 text-xs text-gray-600">
+                  <span>vlthulasiram.23@gmail.com</span>
+                  <span className="text-gray-400">|</span>
+                  <span>+91-7569854797</span>
+                </div>
+
+                {/* Summary */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-b border-gray-200 pb-1">Summary</h5>
+                  <p className="text-xs text-gray-600 leading-relaxed">Dedicated CSE student with problem-solving mindset...</p>
+                </div>
+
+                {/* Education */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-b border-gray-200 pb-1">Education</h5>
+                  <p className="text-xs text-gray-600">B.Tech CSE - CGPA 7.73</p>
+                </div>
+
+                {/* Skills */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-b border-gray-200 pb-1">Skills</h5>
+                  <div className="flex flex-wrap gap-1">
+                    {['AWS', 'Python', 'React', 'Node.js', 'MongoDB'].map((skill) => (
+                      <span key={skill} className="px-2 py-0.5 bg-gradient-to-r from-green-100 to-pink-100 text-gray-700 text-xs rounded">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Experience */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-b border-gray-200 pb-1">Experience</h5>
+                  <p className="text-xs text-gray-600">JNTUA, Sri Vensy, UniConverge, Robotics IIT Delhi</p>
+                </div>
+
+                {/* Download Indicator */}
+                <div className="pt-3 border-t border-gray-200 flex items-center justify-center gap-2 text-pink-500 group-hover:text-pink-600 transition-colors">
+                  <Download size={16} className="group-hover:animate-bounce" />
+                  <span className="text-sm font-medium">Click to download PDF</span>
+                </div>
               </div>
             </div>
           </div>
