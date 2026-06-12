@@ -56,11 +56,18 @@ export default function Resume() {
             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
             <div className="relative bg-white rounded-2xl p-8 shadow-xl">
               <div className="aspect-[8.5/11] bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                <iframe
-                  src={resumeFile}
+                <object
+                  data={resumeFile}
+                  type="application/pdf"
                   className="w-full h-full"
                   title="Resume Preview"
-                />
+                >
+                  <iframe
+                    src={resumeFile}
+                    className="w-full h-full"
+                    title="Resume Preview"
+                  />
+                </object>
               </div>
             </div>
           </div>
