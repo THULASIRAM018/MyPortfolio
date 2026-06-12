@@ -62,11 +62,17 @@ export default function Resume() {
                   className="w-full h-full"
                   title="Resume Preview"
                 >
-                  <iframe
-                    src={resumeFile}
-                    className="w-full h-full"
-                    title="Resume Preview"
-                  />
+                  <div className="flex flex-col items-center justify-center h-full p-8 text-center">
+                    <FileText size={64} className="text-gray-400 mb-4" />
+                    <p className="text-gray-600 mb-2 font-medium">PDF Preview Unavailable</p>
+                    <p className="text-gray-500 text-sm mb-4">Your browser may block embedded PDFs in preview mode</p>
+                    <button
+                      onClick={handleView}
+                      className="px-4 py-2 bg-gradient-to-r from-pink-400 to-yellow-400 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all"
+                    >
+                      Open in New Tab
+                    </button>
+                  </div>
                 </object>
               </div>
             </div>
