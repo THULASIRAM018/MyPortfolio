@@ -21,7 +21,7 @@ export default function Resume() {
     {
       icon: <GraduationCap className="text-green-500" size={28} />,
       title: 'Education',
-      description: 'B.Tech CSE, CGPA 7.73',
+      description: 'B.Tech CSE Graduate, CGPA 7.82',
       gradient: 'from-green-400 to-green-500',
     },
     {
@@ -134,8 +134,8 @@ export default function Resume() {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Professional Summary', items: 'Dedicated CSE student, problem-solving & learning mindset' },
-              { title: 'Education', items: 'B.Tech CSE (CGPA 7.73), Intermediate 61%, Secondary 87%' },
+              { title: 'Professional Summary', items: 'Dedicated CSE graduate, problem-solving & learning mindset' },
+              { title: 'Education', items: 'B.Tech CSE (CGPA 7.82), Intermediate 61%, Secondary 87%' },
               { title: 'Technical Skills', items: 'AWS, Python, React.js, Node.js, MongoDB, Tailwind, Tableau' },
               { title: 'Projects', items: 'Crash Diagnosis in Jupyter, Cloud File System, To-Do API, Smart File Organizer, Password Manager, Quiz Game' },
               { title: 'Certifications', items: 'NPTEL Cloud Computing, Robotics IIT Delhi' },

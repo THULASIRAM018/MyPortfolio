@@ -47,10 +47,10 @@ export default function About() {
               Dedicated to solving real-world problems through technology
             </h3>
             <p className="text-gray-600 leading-relaxed text-lg">
-              I'm a B.Tech Computer Science student from Sreenivasa Institute of Technology and Management Studies, passionate about cloud computing and full-stack development. With hands-on experience in building scalable applications and cloud solutions, I combine technical expertise with creative problem-solving.
+              I'm a B.Tech Computer Science graduate from Sreenivasa Institute of Technology and Management Studies, passionate about cloud computing and full-stack development. With hands-on experience in building scalable applications and cloud solutions, I combine technical expertise with creative problem-solving.
             </p>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Currently pursuing internships in cloud development and Python full-stack engineering, I'm committed to continuously learning and applying my knowledge to impactful projects in the technology sector.
+              Completed internships in cloud development and Python full-stack engineering, I'm committed to continuously learning and applying my knowledge to impactful projects in the technology sector.
             </p>
             <div className="flex gap-4 pt-4">
               <div className="text-center">
@@ -67,7 +67,7 @@ export default function About() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-                  7.73
+                  7.82
                 </div>
                 <div className="text-gray-600 text-sm">CGPA</div>
               </div>
