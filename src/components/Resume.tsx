@@ -6,7 +6,7 @@ export default function Resume() {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resumeFile;
-    link.download = 'Vadivelu_Lokaiah_Thulasiram_Resume.pdf';
+    link.download = 'Vadivelu_Lokaiah_Thulasiram.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
