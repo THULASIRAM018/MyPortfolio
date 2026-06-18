@@ -51,16 +51,65 @@ export default function Resume() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-          {/* Resume Preview */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl">
-              <div className="aspect-[8.5/11] bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                <iframe
-                  src={resumeFile}
-                  className="w-full h-full"
-                  title="Resume Preview"
-                />
+          {/* Resume Preview Card */}
+          <div className="relative group cursor-pointer" onClick={handleDownload}>
+            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition-opacity" />
+            <div className="relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all overflow-hidden">
+              {/* Document Header */}
+              <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-5 text-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h4 className="font-bold text-xl">Vadivelu Lokaiah Thulasiram</h4>
+                    <p className="text-gray-300 text-sm">Software Developer</p>
+                  </div>
+                  <FileText size={40} className="text-gray-400" />
+                </div>
+              </div>
+
+              {/* Document Body - Visual Resume Summary */}
+              <div className="p-6 space-y-4 bg-gray-50">
+                {/* Contact Row */}
+                <div className="flex items-center gap-4 text-xs text-gray-600 border-b pb-3">
+                  <span>vlthulasiram.23@gmail.com</span>
+                  <span className="text-gray-400">|</span>
+                  <span>+91-7569854797</span>
+                </div>
+
+                {/* Summary */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-l-2 border-green-400 pl-2">Summary</h5>
+                  <p className="text-xs text-gray-600 leading-relaxed">Dedicated CSE graduate with problem-solving mindset...</p>
+                </div>
+
+                {/* Education */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-l-2 border-pink-400 pl-2">Education</h5>
+                  <p className="text-xs text-gray-600">B.Tech CSE - CGPA 7.82</p>
+                </div>
+
+                {/* Skills */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-l-2 border-yellow-400 pl-2">Skills</h5>
+                  <div className="flex flex-wrap gap-1">
+                    {['AWS', 'Python', 'React', 'Node.js', 'MongoDB'].map((skill) => (
+                      <span key={skill} className="px-2 py-0.5 bg-gradient-to-r from-green-100 to-pink-100 text-gray-700 text-xs rounded">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Experience */}
+                <div>
+                  <h5 className="font-semibold text-gray-800 text-sm mb-1 border-l-2 border-green-400 pl-2">Experience</h5>
+                  <p className="text-xs text-gray-600">JNTUA, Sri Vensy, UniConverge, Robotics IIT Delhi</p>
+                </div>
+
+                {/* Download Indicator */}
+                <div className="pt-3 border-t border-gray-200 flex items-center justify-center gap-2 text-pink-500 group-hover:text-pink-600 transition-colors">
+                  <Download size={18} className="group-hover:animate-bounce" />
+                  <span className="text-sm font-medium">Click to download PDF</span>
+                </div>
               </div>
             </div>
           </div>
