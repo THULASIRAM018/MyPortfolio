@@ -232,7 +232,7 @@ export default function Contact() {
 
         <div className="mt-16 text-center">
           <p className="text-gray-600 mb-2">
-            © 2024 Vadivelu Lokaiah Thulasiram. Built with React & Tailwind CSS
+            © 2026 Vadivelu Lokaiah Thulasiram. Built with React & Tailwind CSS
           </p>
           <p className="text-gray-500 text-sm">
             <a
