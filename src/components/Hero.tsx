@@ -46,7 +46,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-600 mb-2 animate-slide-up animation-delay-200">
-          B.Tech Computer Science Student
+          B.Tech Computer Science Graduate
         </p>
         <p className="text-lg md:text-xl text-gray-500 mb-8 animate-slide-up animation-delay-200">
           Cloud Developer | Full Stack Engineer | Problem Solver
