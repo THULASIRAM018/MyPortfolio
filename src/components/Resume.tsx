@@ -201,7 +201,7 @@ export default function Resume() {
             {/* Resume Link */}
             <div className="mt-6 p-4 bg-gradient-to-br from-green-50 via-pink-50 to-yellow-50 rounded-xl">
               <p className="text-sm text-gray-700">
-                <span className="font-bold">Last Updated:</span> March 2026
+                <span className="font-bold">Last Updated:</span> June 2026
               </p>
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-bold">Format:</span> PDF Document
