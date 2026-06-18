@@ -1,13 +1,12 @@
-import { Download, FileText, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { Download, FileText, Award, Briefcase, GraduationCap, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 
 export default function Resume() {
-  // Path to the uploaded resume
   const resumeFile = '/Vadivelu_Lokaiah_Thulasiram.pdf';
 
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resumeFile;
-    link.download = 'Vadivelu_Lokaiah_Thulasiram.pdf';
+    link.download = 'Vadivelu_Lokaiah_Thulasiram_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -50,17 +49,107 @@ export default function Resume() {
           <p className="text-gray-600 text-lg">Download or view my professional resume</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-          {/* Resume Preview - PDF Embed */}
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
+          {/* Resume Preview - Styled Document */}
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
-            <div className="relative bg-white rounded-2xl p-4 shadow-xl">
-              <div className="aspect-[8.5/11] bg-gray-100 rounded-lg overflow-hidden">
-                <embed
-                  src={resumeFile}
-                  type="application/pdf"
-                  className="w-full h-full"
-                />
+            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
+              {/* Document Paper Effect */}
+              <div className="bg-gradient-to-b from-gray-50 to-white p-8 min-h-[600px]">
+                {/* Header */}
+                <div className="text-center border-b-2 border-green-400 pb-4 mb-6">
+                  <h3 className="text-2xl font-bold text-gray-800 tracking-wide">VADIVELU LOKAIAH THULASIRAM</h3>
+                  <p className="text-green-600 font-medium mt-1">Software Developer | Cloud Enthusiast</p>
+                </div>
+
+                {/* Contact Info */}
+                <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-600 mb-6">
+                  <span className="flex items-center gap-1"><Mail size={12} /> vlthulasiram.23@gmail.com</span>
+                  <span className="flex items-center gap-1"><Phone size={12} /> +91-7569854797</span>
+                  <span className="flex items-center gap-1"><MapPin size={12} /> Andhra Pradesh, India</span>
+                </div>
+
+                {/* Sections */}
+                <div className="space-y-4 text-sm">
+                  {/* Summary */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-2 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                      PROFESSIONAL SUMMARY
+                    </h4>
+                    <p className="text-gray-600 text-xs leading-relaxed">
+                      Dedicated CSE graduate with problem-solving mindset, hands-on experience in cloud computing and full-stack development.
+                    </p>
+                  </div>
+
+                  {/* Education */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-2 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
+                      EDUCATION
+                    </h4>
+                    <div className="text-xs">
+                      <p className="font-semibold text-gray-700">B.Tech Computer Science &amp; Engineering</p>
+                      <p className="text-gray-600">Sreenivasa Institute of Technology</p>
+                      <p className="text-green-600">CGPA: 7.82</p>
+                    </div>
+                  </div>
+
+                  {/* Skills */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-2 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                      TECHNICAL SKILLS
+                    </h4>
+                    <div className="flex flex-wrap gap-1">
+                      {['AWS', 'Python', 'React.js', 'Node.js', 'MongoDB', 'Tailwind', 'Tableau'].map((skill) => (
+                        <span key={skill} className="px-2 py-0.5 bg-gray-100 text-gray-700 rounded text-xs">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Experience */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-2 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                      EXPERIENCE
+                    </h4>
+                    <div className="text-xs space-y-2">
+                      <div>
+                        <p className="font-semibold text-gray-700">Cloud Developer - JNTUA/Rooman/IBM</p>
+                        <p className="text-gray-500">May 2025 - July 2025</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-700">Python Full Stack - Sri Vensy</p>
+                        <p className="text-gray-500">Nov 2025 - Present</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Projects */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-2 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
+                      PROJECTS
+                    </h4>
+                    <p className="text-xs text-gray-600">
+                      Crash Diagnosis, Cloud File System, To-Do API, Smart File Organizer
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Download Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-8">
+                <button
+                  onClick={handleDownload}
+                  className="px-6 py-3 bg-white rounded-xl font-medium text-gray-800 hover:scale-105 transition-all flex items-center gap-2"
+                >
+                  <Download size={18} />
+                  Download PDF
+                </button>
               </div>
             </div>
           </div>
