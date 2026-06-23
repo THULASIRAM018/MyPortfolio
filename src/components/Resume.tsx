@@ -1,16 +1,7 @@
-import { Download, FileText, Award, Briefcase, GraduationCap, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { ExternalLink, Award, Briefcase, GraduationCap, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Resume() {
-   const resumeFile = process.env.PUBLIC_URL + '/Vadivelu_Lokaiah_Thulasiram.pdf';
-
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = resumeFile;
-    link.download = 'Vadivelu_Lokaiah_Thulasiram.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const resumeFile = 'https://drive.google.com/file/d/1njk_PYJc8ft_Ci2-ZBKzMgyphu0lSTjZ/view?usp=drivesdk';
 
   const handleView = () => {
     window.open(resumeFile, '_blank');
@@ -141,14 +132,14 @@ export default function Resume() {
                 </div>
               </div>
 
-              {/* Download Overlay on Hover */}
+              {/* View Overlay on Hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-8">
                 <button
-                  onClick={handleDownload}
+                  onClick={handleView}
                   className="px-6 py-3 bg-white rounded-xl font-medium text-gray-800 hover:scale-105 transition-all flex items-center gap-2"
                 >
-                  <Download size={18} />
-                  Download PDF
+                  <ExternalLink size={18} />
+                  View Resume
                 </button>
               </div>
             </div>
@@ -183,18 +174,11 @@ export default function Resume() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button
-                onClick={handleDownload}
+                onClick={handleView}
                 className="flex-1 px-6 py-4 bg-gradient-to-r from-green-400 via-pink-400 to-yellow-400 text-white rounded-xl font-medium hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2 group"
               >
-                <Download size={20} className="group-hover:animate-bounce" />
-                Download Resume
-              </button>
-              <button
-                onClick={handleView}
-                className="flex-1 px-6 py-4 bg-white border-2 border-pink-400 text-gray-800 rounded-xl font-medium hover:bg-pink-50 hover:scale-105 transition-all flex items-center justify-center gap-2"
-              >
-                <FileText size={20} />
-                View Full Resume
+                <ExternalLink size={20} className="group-hover:translate-x-1 transition-transform" />
+                View Resume
               </button>
             </div>
 
@@ -209,7 +193,7 @@ export default function Resume() {
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-bold">Resume Link:</span>{' '}
                 <a href={resumeFile} target="_blank" rel="noopener noreferrer" className="text-pink-500 underline">
-                  Open Resume PDF
+                  Open Resume on Google Drive
                 </a>
               </p>
             </div>
