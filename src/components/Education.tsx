@@ -76,7 +76,7 @@ export default function Education() {
       date: 'Nov 2025 - Present',
       color: 'yellow',
     },
-    {
+     {
       title: 'Junior AI Associate Hackathon 2026',
       organization: 'ROOMAN Technologies & StartupVarsity | Bengaluru'
       Tasks: [
