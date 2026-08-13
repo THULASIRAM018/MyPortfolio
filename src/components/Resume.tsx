@@ -226,6 +226,77 @@ export default function Resume() {
             ))}
           </div>
         </div>
+
+        {/* Certifications & Internships Section */}
+        <div className="grid md:grid-cols-2 gap-8 mt-8">
+          {/* Certifications */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg">
+                <Award className="text-white" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800">Certifications</h3>
+            </div>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
+                  <p className="font-semibold text-gray-800">NPTEL Cloud Computing</p>
+                  <p className="text-sm text-gray-600">Completed certification course covering cloud architecture, virtualization, and deployment models.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
+                  <p className="font-semibold text-gray-800">Robotics IIT Delhi</p>
+                  <p className="text-sm text-gray-600">Hands-on training in robotics fundamentals and automation at IIT Delhi.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
+                  <p className="font-semibold text-gray-800">Rooman Hackathon 2026</p>
+                  <p className="text-sm text-gray-600">Participated and earned recognition in the Rooman Hackathon event.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Internships */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg">
+                <Briefcase className="text-white" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800">Internships</h3>
+            </div>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
+                  <p className="font-semibold text-gray-800">Cloud Developer - JNTUA / Rooman / IBM</p>
+                  <p className="text-sm text-gray-500">May 2025 - July 2025</p>
+                  <p className="text-sm text-gray-600 mt-1">Worked on cloud-based development projects, gaining hands-on experience with AWS services and cloud deployment strategies.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
+                  <p className="font-semibold text-gray-800">Python Full Stack Developer - Sri Vensy</p>
+                  <p className="text-sm text-gray-500">Nov 2025 - Present</p>
+                  <p className="text-sm text-gray-600 mt-1">Developing full-stack web applications using Python, building both backend APIs and frontend interfaces.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
+                <div>
+                  <p className="font-semibold text-gray-800">Python Intern - UniConverge</p>
+                  <p className="text-sm text-gray-600 mt-1">Gained practical experience in Python development, working on real-world projects and debugging production code.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
