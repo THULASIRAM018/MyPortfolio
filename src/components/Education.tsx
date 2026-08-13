@@ -78,7 +78,7 @@ export default function Education() {
     },
      {
       title: 'Junior AI Associate Hackathon 2026',
-      organization: 'ROOMAN Technologies & StartupVarsity | Bengaluru'
+      organization: 'ROOMAN Technologies & StartupVarsity | Bengaluru',
       Tasks: [
         'Participated in a 24-hour Junior AI Associate Hackathon hosted by ROOMAN Technologies.',
         'Completed the full AI product build within the hackathon timeframe',
