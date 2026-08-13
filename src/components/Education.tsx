@@ -76,6 +76,21 @@ export default function Education() {
       date: 'Nov 2025 - Present',
       color: 'yellow',
     },
+    {
+      title: 'Cloud Application Developer - JNTUA Summer Internship',
+      organization: 'Rooman Technologies & IBM',
+      Tasks: [
+        'Managing IAM policies for IT development',
+        'Implementing MP3 notification system',
+        'Deploying web servers on AWS EC2',
+        'Monitoring infrastructure & alerting',
+        'Deploying scalable Nginx on ECS',
+        'Developing a simple To-Do List API',
+      ],
+      Learned: '15 modules · 77 topics · Cloud Architecture, REST APIs, Serverless, DevOps',
+      date: 'May 2025 - July 2025',
+      color: 'green',
+    },
      {
       title: 'Python Developer Intern',
       organization: 'UniConverge Technologies Pvt. Ltd. (Upskill Campus)',
