@@ -59,7 +59,7 @@ export default function Education() {
       ],
       Learned: '24-hour Hackathon · AI Product Development · Build & Presentation',
       date: 'August 2026',
-      color: 'green',
+      color: 'black',
     },
     {
       title: 'Python Full Stack Intern',
