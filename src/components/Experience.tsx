@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, MapPin, Cloud, Code2, Bot, Trophy, Building2 } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Cloud, Code2, Bot, Trophy, Building2, BrainCircuit } from 'lucide-react';
 import type { JSX } from 'react';
 
 interface ExperienceItem {
@@ -6,7 +6,7 @@ interface ExperienceItem {
   organization: string;
   location: string;
   period: string;
-  type: 'Internship' | 'Hackathon' | 'Training';
+  type: 'Internship' | 'Hackathon' | 'Training' | 'Job';
   icon: JSX.Element;
   gradient: string;
   accent: string;
@@ -15,9 +15,53 @@ interface ExperienceItem {
   skills: string[];
   certificate?: string;
   highlight?: string;
+  phases?: { title: string; detail: string }[];
+  deploymentAreas?: string[];
 }
 
 const experiences: ExperienceItem[] = [
+  {
+    role: 'Junior AI Research Associate',
+    organization: 'ROOMAN Technologies · StartupVarsity',
+    location: 'Bengaluru, India',
+    period: '2026 (5 months)',
+    type: 'Job',
+    icon: <BrainCircuit size={26} />,
+    gradient: 'from-violet-400 to-indigo-500',
+    accent: 'violet',
+    summary:
+      'Works alongside ROOMAN\'s AI team to build and deploy real AI products and solutions. The role combines structured learning with hands-on delivery on live projects using modern AI technologies such as large language models, retrieval-augmented generation, and agentic frameworks.',
+    responsibilities: [
+      'Build, test and deploy AI features and applications on live projects',
+      'Develop AI-based applications for ROOMAN\'s internal projects, tenders, and international clients',
+      'Contribute to StartupVarsity projects, tagged with founders\' teams to help build their applications',
+      'Support GCC and other clients who hire their technical resources from ROOMAN',
+      'Reports to the AI Team Lead within the Artificial Intelligence / Products department',
+    ],
+    skills: ['LLMs', 'RAG', 'Agentic Frameworks', 'AI Application Development', 'Deployment', 'Python'],
+    phases: [
+      {
+        title: 'Months 1–3 — Online Training',
+        detail:
+          'Three (3) months of compulsory online training in applied AI skills, covering the AI Foundation and AI Professional tracks.',
+      },
+      {
+        title: 'Months 4–5 — Onsite Internship',
+        detail:
+          'On completing the online training, attend the Bengaluru office for a two (2) month onsite internship on live project work.',
+      },
+      {
+        title: 'Attendance & Performance',
+        detail:
+          'Both phases are compulsory. Attendance, learning and performance throughout the program are assessed.',
+      },
+    ],
+    deploymentAreas: [
+      'AI-based application development for ROOMAN\'s internal projects and tenders, and for clients abroad',
+      'StartupVarsity projects — tagged with a founders\' team to help build their application',
+      'GCC and other clients who hire their technical resources from ROOMAN',
+    ],
+  },
   {
     role: 'Cloud Application Developer Intern',
     organization: 'JNTUA Summer Internship · Rooman Technologies & IBM',
@@ -127,6 +171,7 @@ const typeStyles: Record<ExperienceItem['type'], string> = {
   Internship: 'bg-green-100 text-green-700',
   Hackathon: 'bg-amber-100 text-amber-700',
   Training: 'bg-blue-100 text-blue-700',
+  Job: 'bg-violet-100 text-violet-700',
 };
 
 export default function Experience() {
@@ -226,6 +271,43 @@ export default function Experience() {
                         ))}
                       </div>
 
+                      {/* Phases (structured program timeline) */}
+                      {exp.phases && exp.phases.length > 0 && (
+                        <div className="mt-5 p-4 bg-gray-50 rounded-xl space-y-3">
+                          <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">
+                            Program Structure
+                          </p>
+                          {exp.phases.map((phase, i) => (
+                            <div key={i} className="flex items-start gap-3">
+                              <span
+                                className={`mt-1 w-2 h-2 rounded-full bg-gradient-to-r ${exp.gradient} flex-shrink-0`}
+                              />
+                              <div>
+                                <p className="text-sm font-semibold text-gray-800">{phase.title}</p>
+                                <p className="text-sm text-gray-600 leading-relaxed">{phase.detail}</p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Deployment areas */}
+                      {exp.deploymentAreas && exp.deploymentAreas.length > 0 && (
+                        <div className="mt-4 p-4 bg-gradient-to-br from-violet-50 to-indigo-50 rounded-xl">
+                          <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+                            Where You May Be Deployed
+                          </p>
+                          <ul className="space-y-2">
+                            {exp.deploymentAreas.map((area, i) => (
+                              <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                                <Building2 size={14} className="mt-0.5 text-violet-500 flex-shrink-0" />
+                                {area}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
                       {/* Certificate */}
                       {exp.certificate && (
                         <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-2">
@@ -244,10 +326,10 @@ export default function Experience() {
         {/* Summary stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
           {[
+            { label: 'Jobs', value: '1', icon: <BrainCircuit className="text-violet-500" size={24} /> },
             { label: 'Internships', value: '4', icon: <Briefcase className="text-green-500" size={24} /> },
             { label: 'Hackathons', value: '1', icon: <Trophy className="text-yellow-500" size={24} /> },
             { label: 'Training Programs', value: '1', icon: <Bot className="text-blue-500" size={24} /> },
-            { label: 'Active Role', value: '1', icon: <Code2 className="text-pink-500" size={24} /> },
           ].map((stat, i) => (
             <div
               key={i}
