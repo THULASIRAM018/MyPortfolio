@@ -48,33 +48,6 @@ export default function Education() {
       color: 'green',
     },
     {
-      title: 'Junior AI Associate Hackathon 2026',
-      organization: 'Rooman Technologies & StartupVarsity',
-      Tasks: [
-        'Participated in a 24-hour Junior AI Associate Hackathon hosted by ROOMAN Technologies.',
-        'Completed the full AI product build within the hackathon timeframe',
-        'Presented the completed solution to the judging panel.',
-        'Monitoring infrastructure & alerting',
-        'Gained hands-on exposure to AI product development, implementation, and technical presentation.',
-      ],
-      Learned: '24-hour Hackathon · AI Product Development · Build & Presentation',
-      date: 'August 2026',
-      color: 'blue',
-    },
-    {
-      title: 'Python Full Stack Intern',
-      organization: 'Sri Vensy Technologies',
-      Tasks: [
-        'Developed backend modules using Python for business workflows',
-        'Implemented API logic and validated request/response data',
-        'Integrated SQL queries for data storage and retrieval',
-        'Debugged backend issues and optimized application logic',
-        'Collaborated with frontend team to ensure smooth data flow',
-      ],
-      date: 'Nov 2025 - Mar 2026',
-      color: 'yellow',
-    },
-    {
       title: 'Cloud Computing – NPTEL',
       organization: '12-week Certified Course',
       Tasks: [
@@ -89,6 +62,33 @@ export default function Education() {
       ],
       date: 'July 2025 - Oct 2025',
       color: 'pink',
+    },
+    {
+      title: 'Python Full Stack Intern',
+      organization: 'Sri Vensy Technologies',
+      Tasks: [
+        'Developed backend modules using Python for business workflows',
+        'Implemented API logic and validated request/response data',
+        'Integrated SQL queries for data storage and retrieval',
+        'Debugged backend issues and optimized application logic',
+        'Collaborated with frontend team to ensure smooth data flow',
+      ],
+      date: 'Nov 2025 - Present',
+      color: 'yellow',
+    },
+     {
+      title: 'Junior AI Associate Hackathon 2026',
+      organization: 'ROOMAN Technologies & StartupVarsity | Bengaluru',
+      Tasks: [
+        'Participated in a 24-hour Junior AI Associate Hackathon hosted by ROOMAN Technologies.',
+        'Completed the full AI product build within the hackathon timeframe',
+        'Presented the completed solution to the judging panel.',
+        'Monitoring infrastructure & alerting',
+        'Gained hands-on exposure to AI product development, implementation, and technical presentation.',
+      ],
+      Learned: '24-hour Hackathon · AI Product Development · Build & Presentation',
+      date: 'August 2026',
+      color: 'green',
     },
      {
       title: 'Python Developer Intern',
