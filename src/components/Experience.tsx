@@ -15,8 +15,6 @@ interface ExperienceItem {
   skills: string[];
   certificate?: string;
   highlight?: string;
-  phases?: { title: string; detail: string }[];
-  deploymentAreas?: string[];
 }
 
 const experiences: ExperienceItem[] = [
@@ -39,28 +37,7 @@ const experiences: ExperienceItem[] = [
       'Reports to the AI Team Lead within the Artificial Intelligence / Products department',
     ],
     skills: ['LLMs', 'RAG', 'Agentic Frameworks', 'AI Application Development', 'Deployment', 'Python'],
-    phases: [
-      {
-        title: 'Months 1–3 — Online Training',
-        detail:
-          'Three (3) months of compulsory online training in applied AI skills, covering the AI Foundation and AI Professional tracks.',
-      },
-      {
-        title: 'Months 4–5 — Onsite Internship',
-        detail:
-          'On completing the online training, attend the Bengaluru office for a two (2) month onsite internship on live project work.',
-      },
-      {
-        title: 'Attendance & Performance',
-        detail:
-          'Both phases are compulsory. Attendance, learning and performance throughout the program are assessed.',
-      },
-    ],
-    deploymentAreas: [
-      'AI-based application development for ROOMAN\'s internal projects and tenders, and for clients abroad',
-      'StartupVarsity projects — tagged with a founders\' team to help build their application',
-      'GCC and other clients who hire their technical resources from ROOMAN',
-    ],
+    highlight: 'Conditional Job Offer',
   },
   {
     role: 'Cloud Application Developer Intern',
@@ -227,6 +204,15 @@ export default function Experience() {
                         </span>
                       </div>
 
+                      {exp.highlight && (
+                        <div className="mb-4">
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-violet-100 to-indigo-100 text-violet-700 border border-violet-200">
+                            <Trophy size={12} />
+                            {exp.highlight}
+                          </span>
+                        </div>
+                      )}
+
                       {/* Title + org */}
                       <h3 className="text-xl font-bold text-gray-800 mb-1">{exp.role}</h3>
                       <p className="text-sm font-medium text-pink-600 flex items-center gap-1.5">
@@ -270,43 +256,6 @@ export default function Experience() {
                           </span>
                         ))}
                       </div>
-
-                      {/* Phases (structured program timeline) */}
-                      {exp.phases && exp.phases.length > 0 && (
-                        <div className="mt-5 p-4 bg-gray-50 rounded-xl space-y-3">
-                          <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">
-                            Program Structure
-                          </p>
-                          {exp.phases.map((phase, i) => (
-                            <div key={i} className="flex items-start gap-3">
-                              <span
-                                className={`mt-1 w-2 h-2 rounded-full bg-gradient-to-r ${exp.gradient} flex-shrink-0`}
-                              />
-                              <div>
-                                <p className="text-sm font-semibold text-gray-800">{phase.title}</p>
-                                <p className="text-sm text-gray-600 leading-relaxed">{phase.detail}</p>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-
-                      {/* Deployment areas */}
-                      {exp.deploymentAreas && exp.deploymentAreas.length > 0 && (
-                        <div className="mt-4 p-4 bg-gradient-to-br from-violet-50 to-indigo-50 rounded-xl">
-                          <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
-                            Where You May Be Deployed
-                          </p>
-                          <ul className="space-y-2">
-                            {exp.deploymentAreas.map((area, i) => (
-                              <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                                <Building2 size={14} className="mt-0.5 text-violet-500 flex-shrink-0" />
-                                {area}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
 
                       {/* Certificate */}
                       {exp.certificate && (
