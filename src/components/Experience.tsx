@@ -88,7 +88,7 @@ const experiences: ExperienceItem[] = [
     role: 'Python Full Stack Developer Intern',
     organization: 'Sri Vensy Technologies',
     location: 'Andhra Pradesh, India',
-    period: 'Nov 2025 – Present',
+    period: 'Nov 2025 – 31 Mar 2026',
     type: 'Internship',
     icon: <Code2 size={26} />,
     gradient: 'from-pink-400 to-rose-500',
