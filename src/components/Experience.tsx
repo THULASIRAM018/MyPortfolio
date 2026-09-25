@@ -22,7 +22,7 @@ const experiences: ExperienceItem[] = [
     role: 'Junior AI Research Associate',
     organization: 'ROOMAN Technologies · StartupVarsity',
     location: 'Bengaluru, India',
-    period: '2026 (5 months)',
+    period: 'Aug 2026 - Present',
     type: 'Job',
     icon: <BrainCircuit size={26} />,
     gradient: 'from-violet-400 to-indigo-500',
