@@ -47,20 +47,6 @@ export default function Education() {
       date: 'May 2025 - July 2025',
       color: 'green',
     },
-        function CertificateButton({ path, gradient }: { path: string; gradient: string }) 
-      {
-        const handleView = () => window.open(path, '_blank');
-        return (
-          <button
-            onClick={handleView}
-            className={`mt-3 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${gradient} text-white rounded-lg text-sm font-medium hover:shadow 
-            lg hover:scale-105 transition-all`}
-            >
-            <FileText size={16} />
-            View Certificate
-          </button>
-        );
-      }
     {
       title: 'Cloud Computing – NPTEL',
       organization: '12-week Certified Course',
