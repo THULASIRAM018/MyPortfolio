@@ -1,7 +1,7 @@
 import { ExternalLink, Award, Briefcase, GraduationCap } from 'lucide-react';
 
 export default function Resume() {
-  const resumeFile = 'https://drive.google.com/file/d/1njk_PYJc8ft_Ci2-ZBKzMgyphu0lSTjZ/view?usp=drivesdk';
+  const resumeFile = '/certifications/Vadivelu_Lokaiah_Thulasiram copy.pdf';
 
   const handleView = () => {
     window.open(resumeFile, '_blank');
@@ -47,7 +47,7 @@ export default function Resume() {
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
               <div className="bg-gray-100 p-4">
                 <iframe
-                  src="/Vadivelu_Lokaiah_Thulasiram.pdf#view=FitH"
+                  src={`${resumeFile}#view=FitH`}
                   title="Vadivelu Lokaiah Thulasiram resume preview"
                   className="w-full h-[600px] rounded-lg bg-white"
                 />
@@ -114,7 +114,7 @@ export default function Resume() {
               <p className="text-sm text-gray-700 mt-1">
                 <span className="font-bold">Resume Link:</span>{' '}
                 <a href={resumeFile} target="_blank" rel="noopener noreferrer" className="text-pink-500 underline">
-                  Open Resume on Google Drive
+                  Open Resume PDF
                 </a>
               </p>
             </div>
