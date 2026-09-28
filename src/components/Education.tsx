@@ -46,7 +46,7 @@ export default function Education() {
       Learned: '15 modules · 77 topics · Cloud Architecture, REST APIs, Serverless, DevOps',
       date: 'May 2025 - July 2025',
       color: 'green',
-      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
+      certificatePath: '/home/project/public/Rooman_Certificate_(2).pdf',
     },
     {
       title: 'Cloud Computing – NPTEL',
