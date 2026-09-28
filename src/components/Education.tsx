@@ -46,6 +46,7 @@ export default function Education() {
       Learned: '15 modules · 77 topics · Cloud Architecture, REST APIs, Serverless, DevOps',
       date: 'May 2025 - July 2025',
       color: 'green',
+      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
     {
       title: 'Cloud Computing – NPTEL',
@@ -62,6 +63,7 @@ export default function Education() {
       ],
       date: 'July 2025 - Oct 2025',
       color: 'pink',
+      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
     {
       title: 'Python Full Stack Intern',
@@ -75,6 +77,7 @@ export default function Education() {
       ],
       date: 'Nov 2025 - Present',
       color: 'yellow',
+      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
      {
       title: 'Junior AI Associate Hackathon 2026',
@@ -104,6 +107,7 @@ export default function Education() {
       ],
       date: 'May 2025 – July 2025',
       color: 'red',
+      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
     {
       title: 'Fundamentals of Robotics - IIT Delhi',
@@ -116,6 +120,7 @@ export default function Education() {
       Learned: 'Completed a 5 day Skill Development & Entrepreneurship Training Program on Fundamentals of Robotics',
       date: '11 Dec - 15 Dec 2023',
       color: 'blue',
+      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
   ];
 
