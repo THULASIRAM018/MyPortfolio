@@ -107,7 +107,7 @@ export default function Education() {
       ],
       date: 'May 2025 – July 2025',
       color: 'red',
-      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
+      certificatePath: '/certifications/UpSkills_Python.pdf',
     },
     {
       title: 'Fundamentals of Robotics - IIT Delhi',
