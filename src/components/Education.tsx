@@ -46,7 +46,8 @@ export default function Education() {
       Learned: '15 modules · 77 topics · Cloud Architecture, REST APIs, Serverless, DevOps',
       date: 'May 2025 - July 2025',
       color: 'green',
-      function CertificateButton({ path, gradient }: { path: string; gradient: string }) 
+    },
+        function CertificateButton({ path, gradient }: { path: string; gradient: string }) 
       {
         const handleView = () => window.open(path, '_blank');
         return (
@@ -60,7 +61,6 @@ export default function Education() {
           </button>
         );
       }
-    },
     {
       title: 'Cloud Computing – NPTEL',
       organization: '12-week Certified Course',
