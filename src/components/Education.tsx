@@ -1,4 +1,4 @@
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, Award, FileText } from 'lucide-react';
 
 export default function Education() {
   const educationDetails = [
@@ -89,6 +89,7 @@ export default function Education() {
       Learned: '24-hour Hackathon · AI Product Development · Build & Presentation',
       date: 'August 2026',
       color: 'green',
+      certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
      {
       title: 'Python Developer Intern',
@@ -170,6 +171,13 @@ export default function Education() {
                 red: 'border-l-4 border-red-400 from-yellow-50 to-white',
                 blue: 'border-l-4 border-blue-400 from-blue-50 to-white',
               };
+              const gradientMap = {
+                green: 'from-green-400 to-green-500',
+                pink: 'from-pink-400 to-pink-500',
+                yellow: 'from-yellow-400 to-yellow-500',
+                red: 'from-red-400 to-rose-500',
+                blue: 'from-blue-400 to-sky-500',
+              };
               return (
                 <div
                   key={index}
@@ -198,6 +206,15 @@ export default function Education() {
                   >
                     {cert.date}
                   </p>
+                  {cert.certificatePath && (
+                    <button
+                      onClick={() => window.open(cert.certificatePath, '_blank')}
+                      className={`mt-3 w-full inline-flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r ${gradientMap[cert.color as keyof typeof gradientMap]} text-white rounded-lg text-sm font-medium hover:shadow-lg hover:scale-[1.02] transition-all`}
+                    >
+                      <FileText size={16} />
+                      View Certificate
+                    </button>
+                  )}
                 </div>
               );
             })}
