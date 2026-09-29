@@ -9,6 +9,9 @@ export default function Skills() {
       color: 'from-green-400 to-green-500',
       skills: [
         { name: 'AWS', level: 85 },
+        { name: 'AWS EC2', level: 82 },
+        { name: 'AWS S3', level: 80 },
+        { name: 'AWS IAM', level: 78 },
         { name: 'AWS Lambda', level: 80 },
         { name: 'DynamoDB', level: 75 },
         { name: 'Cloud Computing', level: 80 },
@@ -34,6 +37,17 @@ export default function Skills() {
         { name: 'MongoDB', level: 75 },
       ],
     },
+    {
+      category: 'Tools & Platforms',
+      color: 'from-blue-400 to-sky-500',
+      skills: [
+        { name: 'Power BI', level: 78 },
+        { name: 'Linux', level: 80 },
+        { name: 'GitHub', level: 85 },
+        { name: 'VS Code', level: 88 },
+        { name: 'Python IDLE', level: 82 },
+      ],
+    },
   ];
 
   return (
@@ -48,7 +62,7 @@ export default function Skills() {
           <p className="text-gray-600 text-lg">Technologies I work with</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, catIndex) => (
             <div
               key={catIndex}
@@ -93,7 +107,7 @@ export default function Skills() {
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'SPSS', 'DBMS', 'Excel', 'MS Word', 'Robotics'].map(
+          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'Power BI', 'SPSS', 'DBMS', 'Excel', 'MS Word', 'Robotics'].map(
             (tech, index) => (
               <div
                 key={index}
