@@ -48,6 +48,17 @@ export default function Skills() {
         { name: 'Python IDLE', level: 82 },
       ],
     },
+    {
+      category: 'AI & Machine Learning',
+      color: 'from-teal-400 to-cyan-500',
+      skills: [
+        { name: 'Machine Learning', level: 78 },
+        { name: 'LLMs (Groq/Gemini/OpenAI)', level: 82 },
+        { name: 'Agentic Frameworks', level: 75 },
+        { name: 'RAG (Retrieval-Augmented Gen)', level: 75 },
+        { name: 'AI Application Development', level: 80 },
+      ],
+    },
   ];
 
   return (
@@ -106,8 +117,10 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'Power BI', 'SPSS', 'DBMS', 'Excel', 'MS Word', 'Robotics'].map(
+        <div className="mt-16">
+          <h3 className="text-xl font-bold text-gray-800 mb-6 text-center">AI Tools & Assistants</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'Power BI', 'SPSS', 'DBMS', 'Excel', 'MS Word', 'Robotics', 'ChatGPT', 'Bolt.ai', 'DeepSeek', 'Microsoft Copilot', 'Gemini AI', 'GitHub Copilot'].map(
             (tech, index) => (
               <div
                 key={index}
@@ -117,6 +130,7 @@ export default function Skills() {
               </div>
             )
           )}
+        </div>
         </div>
       </div>
     </section>
