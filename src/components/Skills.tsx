@@ -59,6 +59,18 @@ export default function Skills() {
         { name: 'AI Application Development', level: 80 },
       ],
     },
+    {
+      category: 'Software & Database',
+      color: 'from-rose-400 to-red-500',
+      skills: [
+        { name: 'SQLite', level: 75 },
+        { name: 'Pandas', level: 78 },
+        { name: 'NumPy', level: 76 },
+        { name: 'Tableau', level: 72 },
+        { name: 'Power BI', level: 78 },
+        { name: 'SPSS', level: 70 },
+      ],
+    },
   ];
 
   return (
@@ -73,7 +85,7 @@ export default function Skills() {
           <p className="text-gray-600 text-lg">Technologies I work with</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, catIndex) => (
             <div
               key={catIndex}
@@ -120,7 +132,7 @@ export default function Skills() {
         <div className="mt-16">
           <h3 className="text-xl font-bold text-gray-800 mb-6 text-center">AI Tools & Assistants</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {['HTML', 'Express.js', 'REST APIs', 'Pandas', 'NumPy', 'Tableau', 'Power BI', 'SPSS', 'DBMS', 'Excel', 'MS Word', 'Robotics', 'ChatGPT', 'Bolt.ai', 'DeepSeek', 'Microsoft Copilot', 'Gemini AI', 'GitHub Copilot'].map(
+          {['HTML', 'Express.js', 'REST APIs', 'DBMS', 'Excel', 'MS Word', 'Robotics', 'ChatGPT', 'Bolt.ai', 'DeepSeek', 'Microsoft Copilot', 'Gemini AI', 'GitHub Copilot'].map(
             (tech, index) => (
               <div
                 key={index}
