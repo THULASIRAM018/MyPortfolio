@@ -1,4 +1,4 @@
-import { GraduationCap, Award, FileText } from 'lucide-react';
+import { GraduationCap, Award, FileText, Trophy } from 'lucide-react';
 
 export default function Education() {
   const educationDetails = [
@@ -160,6 +160,33 @@ export default function Education() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* GATE 2026 Achievement Banner */}
+        <div className="relative group mb-16">
+          <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
+          <div className="relative bg-white rounded-2xl p-8 shadow-xl overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-shrink-0 p-5 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-lg">
+                <Trophy className="text-white" size={40} />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-800">GATE 2026 Qualified</h3>
+                  <span className="px-3 py-1 bg-gradient-to-r from-green-400 to-green-500 text-white text-xs font-bold rounded-full">ELIGIBLE FOR AICTE STIPEND</span>
+                </div>
+                <p className="text-gray-600 text-lg">
+                  All India Rank: <span className="font-bold text-orange-500">76,999</span> — Qualified for M.Tech admission with AICTE GATE PG Scholarship stipend eligibility.
+                </p>
+              </div>
+              <div className="hidden md:flex flex-col items-center">
+                <div className="text-4xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                  76999
+                </div>
+                <div className="text-gray-500 text-sm font-medium">All India Rank</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Certifications Section */}

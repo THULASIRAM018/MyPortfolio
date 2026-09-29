@@ -71,6 +71,12 @@ export default function About() {
                 </div>
                 <div className="text-gray-600 text-sm">CGPA</div>
               </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                  GATE
+                </div>
+                <div className="text-gray-600 text-sm">2026 Qualified</div>
+              </div>
             </div>
           </div>
         </div>

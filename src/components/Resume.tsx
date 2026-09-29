@@ -1,4 +1,4 @@
-import { ExternalLink, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { ExternalLink, Award, Briefcase, GraduationCap, Trophy } from 'lucide-react';
 
 export default function Resume() {
   const resumeFile = '/certifications/Vadivelu_Lokaiah_Thulasiram copy.pdf';
@@ -25,6 +25,12 @@ export default function Resume() {
       title: 'Expertise',
       description: 'Cloud Computing, Python Full Stack, AWS',
       gradient: 'from-yellow-400 to-yellow-500',
+    },
+    {
+      icon: <Trophy className="text-orange-500" size={28} />,
+      title: 'GATE 2026 Qualified',
+      description: 'All India Rank 76,999 — Eligible for AICTE PG Stipend for M.Tech',
+      gradient: 'from-amber-400 to-orange-500',
     },
   ];
 
@@ -132,6 +138,7 @@ export default function Resume() {
               { title: 'Education', items: 'B.Tech CSE (CGPA 7.82), Intermediate 61%, Secondary 87%' },
               { title: 'Technical Skills', items: 'AWS, Python, React.js, Node.js, MongoDB, Tailwind, Tableau' },
               { title: 'Projects', items: 'Crash Diagnosis in Jupyter, Cloud File System, To-Do API, Smart File Organizer, Password Manager, Quiz Game' },
+              { title: 'Achievements', items: 'GATE 2026 Qualified (AIR 76,999), AICTE Stipend Eligible for M.Tech' },
               { title: 'Certifications', items: 'NPTEL Cloud Computing, Robotics IIT Delhi' },
               { title: 'Internships', items: 'JNTUA Cloud Developer, Python Full Stack at Sri Vensy, UniConverge Python Intern' },
               { title: 'Languages', items: 'Tamil (Native), Telugu (Proficient), English (Intermediate)' },
