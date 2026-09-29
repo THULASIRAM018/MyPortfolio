@@ -71,7 +71,7 @@ const experiences: ExperienceItem[] = [
     gradient: 'from-pink-400 to-rose-500',
     accent: 'pink',
     summary:
-      'Ongoing full-stack internship building production backend modules in Python, integrating databases, and collaborating with the frontend team for seamless data flow.',
+      'Completed full-stack internship building production backend modules in Python, integrating databases, and collaborating with the frontend team for seamless data flow.',
     responsibilities: [
       'Developed backend modules using Python for business workflows',
       'Implemented API logic and validated request/response data',
