@@ -75,7 +75,7 @@ export default function Education() {
         'Debugged backend issues and optimized application logic',
         'Collaborated with frontend team to ensure smooth data flow',
       ],
-      date: 'Nov 2025 - Present',
+      date: 'Nov 2025 - Mar 2026',
       color: 'yellow',
       certificatePath: '/certifications/Rooman_Hackathon_2026.pdf',
     },
