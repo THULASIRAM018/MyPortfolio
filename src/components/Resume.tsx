@@ -137,7 +137,7 @@ export default function Resume() {
               { title: 'Professional Summary', items: 'Dedicated CSE graduate, problem-solving & learning mindset' },
               { title: 'Education', items: 'B.Tech CSE (CGPA 7.82), Intermediate 61%, Secondary 87%' },
               { title: 'Technical Skills', items: 'AWS, Python, React.js, Node.js, MongoDB, Tailwind, Tableau' },
-              { title: 'Projects', items: 'Crash Diagnosis in Jupyter, Cloud File System, To-Do API, Smart File Organizer, Password Manager, Quiz Game' },
+              { title: 'Projects', items: 'Crash Diagnosis in Jupyter, Cloud File System, Meeting Notes AI Agent, Smart File Organizer, Password Manager, Quiz Game' },
               { title: 'Achievements', items: 'GATE 2026 Qualified (AIR 76,999), AICTE Stipend Eligible for M.Tech' },
               { title: 'Certifications', items: 'NPTEL Cloud Computing, Robotics IIT Delhi' },
               { title: 'Internships', items: 'JNTUA Cloud Developer, Python Full Stack at Sri Vensy, UniConverge Python Intern' },

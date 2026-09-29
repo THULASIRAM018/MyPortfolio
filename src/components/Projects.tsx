@@ -25,12 +25,13 @@ export default function Projects() {
       githubUrl: 'https://github.com/THULASIRAM018/Cloud-Based-File-System2',
     },
     {
-      title: 'To-Do List API',
-      description: 'Simple yet powerful RESTful API for managing tasks and productivity. Built during cloud computing internship with proper authentication and data management.',
-      image: 'https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Node.js', 'Express', 'REST API'],
-      category: 'web',
-      gradient: 'from-yellow-400 to-yellow-500',
+      title: 'Meeting Notes AI Agent',
+      description: 'An AI-powered Meeting Notes Assistant that automatically summarizes meeting transcripts and extracts actionable tasks using Large Language Models. Features AI-generated summaries, action item extraction, task owner identification, deadline extraction, and priority assignment (High/Medium/Low). Built with FastAPI backend, React + Vite frontend, and LLM integration (Groq/Gemini/OpenAI).',
+      image: 'https://images.pexels.com/photos/6340671/pexels-photo-6340671.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['React', 'Vite', 'FastAPI', 'LLM', 'Python'],
+      category: 'AI',
+      gradient: 'from-cyan-400 to-teal-500',
+      githubUrl: 'https://github.com/THULASIRAM018/meeting-notes-ai-agent',
     },
     {
       title: 'Smart File Organizer System',
@@ -58,7 +59,7 @@ export default function Projects() {
       gradient: 'from-orange-400 to-orange-500',
     }
   ];
-  const filters = ['all', 'web', 'ML', 'software', 'security'];
+  const filters = ['all', 'web', 'ML', 'AI', 'software', 'security'];
 
   const filteredProjects = activeFilter === 'all'
     ? projects
