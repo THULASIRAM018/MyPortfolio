@@ -204,7 +204,7 @@ export default function Resume() {
                 <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                   <p className="font-semibold text-gray-800">Python Full Stack Developer - Sri Vensy</p>
-                  <p className="text-sm text-gray-500">Nov 2025 - Present</p>
+                  <p className="text-sm text-gray-500">Nov 2025 - Mar 2026</p>
                   <p className="text-sm text-gray-600 mt-1">Developing full-stack web applications using Python, building both backend APIs and frontend interfaces.</p>
                 </div>
               </li>
