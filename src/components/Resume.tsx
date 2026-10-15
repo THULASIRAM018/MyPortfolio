@@ -1,7 +1,7 @@
 import { ExternalLink, Award, Briefcase, GraduationCap, Trophy } from 'lucide-react';
 
 export default function Resume() {
-  const resumeFile = '/certifications/Vadivelu_Lokaiah_Thulasiram.pdf';
+  const resumeFile = '/certifications/Vadivelu_Lokaiah_Thulasiram copy.pdf';
 
   const handleView = () => {
     window.open(resumeFile, '_blank');
